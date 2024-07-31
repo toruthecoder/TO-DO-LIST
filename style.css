@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    color: #fff;
+    background-color: #333;  
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+
+.container1{
+    display: flex;
+    width: 95vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+}
+
+.input{
+    width: 100vw;
+    height: 9vh;
+}
+
+.input input{
+    width: 90%;
+    height: 7vh;
+    margin-left: 4vw;
+    padding: 1rem;
+    border-radius: 2rem;
+    outline: none;
+    font-size: 1rem;
+    border: .20rem solid #000;
+    animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {border-color: red;}
+    25% {border-color: orange;}
+    50% {border-color: blue;}
+    75% {border-color: green;}
+    100% {border-color: purple;}
+}
+
+.btn{
+    border: none;
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: rgb(25, 138, 25);
+    border-radius: .5rem;
+    margin-left: 86.5vw;
+    cursor: pointer;
+}
+
+.btn:hover{
+    font-weight: 500;
+    color : #444;
+    background-color: rgb(130, 231, 130);   
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vh;
+    width: 98vw;
+    height: 8vh;
+}
+
+.head0{
+    font-size: 2rem;
+    margin-left: 2vw;
+}
+
+.btn0{
+    margin-right: 2vw;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(50, 171, 241);
+    padding: .75rem .8rem .75rem .8rem;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.btn0:hover{
+    font-weight: 500;
+    color: #444;
+    background-color: rgb(116, 201, 250);
+}
+
+.list-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top:9vh;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+    color: #444;
+    background-color: #fff;
+    border: .10rem solid rgb(148, 148, 148);
+    border-radius: 2rem;
+    border: .15rem solid #000;
+    animation: colorMove 5s infinite alternate;
+}
+
+@keyframes colorMove {
+    0% {border-color: rgb(151, 56, 196)};
+    15% {border-color: orange;}
+    25% {border-color: rgb(255, 0, 212)};
+    35% {border-color: orangered};
+    45% {border-color: purple;}
+    55% {border-color: green};
+    65% {border-color: rgb(50, 171, 241);}
+    75% {border-color: blue};
+    85% {border-color: yellow;}
+    100% {border-color: purple};
+    
+}
+
+.item h1{
+    margin-left: 1.5vw;
+    margin-right: 2vw;
+    flex-grow: 1;
+}
+
+.item button{
+    border: none;
+    margin-right: .1vw;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn3{
+    font-weight: 500;
+    color: green;
+    background-color: #fff;
+}
+
+.btn3:hover{
+    font-weight: 500;
+    color: #fff;
+    background-color: green;
+}
+
+.btn4{
+    font-weight: 600;
+    color: rgb(50, 171, 241);
+    background-color: #eeecec;
+}
+
+.btn4:hover{
+    font-weight: 500;
+    color: #fff;
+    background-color: rgb(50, 171, 241);
+}
+
+
+
